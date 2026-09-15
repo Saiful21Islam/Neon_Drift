@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
 
     <title>Neon Drift</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./">
 </head>
 
 <body>
@@ -41,15 +45,24 @@
 
                 <div class="menu-actions">
 
-                    <button id="startGameBtn" class="primary-btn">
+                    <button
+                        id="startGameBtn"
+                        class="primary-btn"
+                    >
                         START RACE
                     </button>
 
-                    <button id="garageBtn" class="secondary-btn">
+                    <button
+                        id="garageBtn"
+                        class="secondary-btn"
+                    >
                         GARAGE
                     </button>
 
-                    <button id="recordsBtn" class="secondary-btn">
+                    <button
+                        id="recordsBtn"
+                        class="secondary-btn"
+                    >
                         RECORDS
                     </button>
 
@@ -78,7 +91,10 @@
              GAME
         ========================== -->
 
-        <section id="gameScreen" class="screen game-screen">
+        <section
+            id="gameScreen"
+            class="screen game-screen"
+        >
 
             <canvas id="gameCanvas"></canvas>
 
@@ -106,7 +122,10 @@
                     </strong>
                 </div>
 
-                <button id="pauseBtn" class="pause-btn">
+                <button
+                    id="pauseBtn"
+                    class="pause-btn"
+                >
                     II
                 </button>
 
@@ -115,22 +134,37 @@
 
             <!-- TOUCH AREA -->
 
-            <div id="touchArea" class="touch-area"></div>
+            <div
+                id="touchArea"
+                class="touch-area"
+            ></div>
 
 
             <!-- MOBILE CONTROLS -->
 
-            <div id="mobileControls" class="mobile-controls">
+            <div
+                id="mobileControls"
+                class="mobile-controls"
+            >
 
-                <button id="leftBtn" class="control-btn">
+                <button
+                    id="leftBtn"
+                    class="control-btn"
+                >
                     ←
                 </button>
 
-                <button id="nitroBtn" class="control-btn nitro-btn">
+                <button
+                    id="nitroBtn"
+                    class="control-btn nitro-btn"
+                >
                     N₂O
                 </button>
 
-                <button id="rightBtn" class="control-btn">
+                <button
+                    id="rightBtn"
+                    class="control-btn"
+                >
                     →
                 </button>
 
@@ -153,7 +187,10 @@
 
                 <div class="nitro-bar">
 
-                    <div id="nitroFill" class="nitro-fill"></div>
+                    <div
+                        id="nitroFill"
+                        class="nitro-fill"
+                    ></div>
 
                 </div>
 
@@ -166,7 +203,10 @@
              PAUSE
         ========================== -->
 
-        <section id="pauseScreen" class="overlay">
+        <section
+            id="pauseScreen"
+            class="overlay"
+        >
 
             <div class="overlay-card">
 
@@ -174,11 +214,17 @@
 
                 <h2>PAUSED</h2>
 
-                <button id="resumeBtn" class="primary-btn">
+                <button
+                    id="resumeBtn"
+                    class="primary-btn"
+                >
                     RESUME
                 </button>
 
-                <button id="pauseMenuBtn" class="secondary-btn">
+                <button
+                    id="pauseMenuBtn"
+                    class="secondary-btn"
+                >
                     MAIN MENU
                 </button>
 
@@ -191,7 +237,10 @@
              GAME OVER
         ========================== -->
 
-        <section id="gameOverScreen" class="overlay">
+        <section
+            id="gameOverScreen"
+            class="overlay"
+        >
 
             <div class="overlay-card">
 
@@ -218,15 +267,24 @@
 
                 </div>
 
-                <div id="newRecord" class="new-record">
+                <div
+                    id="newRecord"
+                    class="new-record"
+                >
                     NEW RECORD
                 </div>
 
-                <button id="restartBtn" class="primary-btn">
+                <button
+                    id="restartBtn"
+                    class="primary-btn"
+                >
                     RACE AGAIN
                 </button>
 
-                <button id="gameOverMenuBtn" class="secondary-btn">
+                <button
+                    id="gameOverMenuBtn"
+                    class="secondary-btn"
+                >
                     MAIN MENU
                 </button>
 
@@ -239,11 +297,17 @@
              GARAGE
         ========================== -->
 
-        <section id="garageScreen" class="screen page-screen">
+        <section
+            id="garageScreen"
+            class="screen page-screen"
+        >
 
             <div class="page-header">
 
-                <button id="garageBackBtn" class="back-btn">
+                <button
+                    id="garageBackBtn"
+                    class="back-btn"
+                >
                     ←
                 </button>
 
@@ -312,11 +376,17 @@
              RECORDS
         ========================== -->
 
-        <section id="recordsScreen" class="screen page-screen">
+        <section
+            id="recordsScreen"
+            class="screen page-screen"
+        >
 
             <div class="page-header">
 
-                <button id="recordsBackBtn" class="back-btn">
+                <button
+                    id="recordsBackBtn"
+                    class="back-btn"
+                >
                     ←
                 </button>
 
@@ -353,5 +423,4 @@
     <script src="./script.js"></script>
 
 </body>
-
 </html>
