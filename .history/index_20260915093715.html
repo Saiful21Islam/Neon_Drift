@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neon Drift - Street Racing</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Main Menu -->
+    <div id="mainMenu" class="screen">
+
+        <div class="logo">
+            <span>NEON</span>
+            DRIFT
+        </div>
+
+        <p class="subtitle">OFFLINE STREET RACING</p>
+
+        <div class="menu-buttons">
+            <button id="playBtn">PLAY NOW</button>
+            <button id="garageBtn">GARAGE</button>
+            <button id="recordsBtn">RECORDS</button>
+            <button id="settingsBtn">SETTINGS</button>
+        </div>
+
+        <div class="credit">
+            © 2026 Neon Drift
+        </div>
+    </div>
+
+
+    <!-- Game -->
+    <div id="gameScreen" class="game-screen hidden">
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="hud">
+
+            <div class="hud-item">
+                <small>SCORE</small>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="hud-item">
+                <small>COINS</small>
+                <strong id="coins">0</strong>
+            </div>
+
+            <div class="hud-item">
+                <small>SPEED</small>
+                <strong><span id="speed">0</span> KM/H</strong>
+            </div>
+
+            <button id="pauseBtn">Ⅱ</button>
+
+        </div>
+
+        <!-- Mobile controls -->
+        <div class="mobile-controls">
+            <button id="leftBtn">◀</button>
+
+            <button id="nitroBtn">NITRO</button>
+
+            <button id="rightBtn">▶</button>
+        </div>
+
+    </div>
+
+
+    <!-- Pause -->
+    <div id="pauseMenu" class="overlay hidden">
+
+        <div class="panel">
+
+            <h2>GAME PAUSED</h2>
+
+            <button id="resumeBtn">RESUME</button>
+            <button id="restartBtn">RESTART</button>
+            <button id="pauseHomeBtn">MAIN MENU</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Game Over -->
+    <div id="gameOver" class="overlay hidden">
+
+        <div class="panel">
+
+            <p class="small-title">RACE COMPLETE</p>
+
+            <h1>GAME OVER</h1>
+
+            <div class="result">
+
+                <div>
+                    <span>SCORE</span>
+                    <strong id="finalScore">0</strong>
+                </div>
+
+                <div>
+                    <span>COINS</span>
+                    <strong id="finalCoins">0</strong>
+                </div>
+
+            </div>
+
+            <button id="playAgainBtn">PLAY AGAIN</button>
+            <button id="homeBtn">MAIN MENU</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Garage -->
+    <div id="garageScreen" class="screen hidden">
+
+        <button class="backBtn" id="garageBack">← BACK</button>
+
+        <h1>GARAGE</h1>
+
+        <div class="car-card">
+
+            <div class="car-preview">
+                🚗
+            </div>
+
+            <h2>STARTER</h2>
+
+            <p>Balanced street racing car.</p>
+
+            <div class="stats">
+
+                <div>
+                    <span>SPEED</span>
+                    <div class="bar">
+                        <i style="width:60%"></i>
+                    </div>
+                </div>
+
+                <div>
+                    <span>HANDLING</span>
+                    <div class="bar">
+                        <i style="width:75%"></i>
+                    </div>
+                </div>
+
+                <div>
+                    <span>NITRO</span>
+                    <div class="bar">
+                        <i style="width:50%"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <button>SELECTED</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Records -->
+    <div id="recordsScreen" class="screen hidden">
+
+        <button class="backBtn" id="recordsBack">← BACK</button>
+
+        <h1>YOUR RECORDS</h1>
+
+        <div class="record-card">
+
+            <div>
+                <span>BEST SCORE</span>
+                <strong id="bestScore">0</strong>
+            </div>
+
+            <div>
+                <span>TOTAL COINS</span>
+                <strong id="totalCoins">0</strong>
+            </div>
+
+            <div>
+                <span>RACES</span>
+                <strong id="totalRaces">0</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
